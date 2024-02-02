@@ -1,0 +1,5 @@
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="/home/hong/catkin_ws/src/radar_localization/config/config.rviz"/>
+  <node name="radar_localization" pkg="radar_localization" type="radar_localization" output="screen" args="/home/hong/catkin_ws/src/radar_localization/Example/701_config.yaml">
+  </node>
+</launch>

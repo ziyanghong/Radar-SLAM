@@ -1,0 +1,17 @@
+# Hashes of file build rules.
+aa35b5996aae48ab508397406285c701 src/applications/FLIRTDemo.moc
+67616c40ef720cb26999cb71d05a2e55 src/gui/BetaGridPresenter.moc
+39e49ef584f216839aa7d92001428454 src/gui/DescriptorChooserPresenter.moc
+0d2d5b262606c87b6f75f67e1a391714 src/gui/DescriptorWidget.moc
+97910b17ce8d840a79638cf54023c07a src/gui/DetectorChooserPresenter.moc
+e0233af2bd32312ec0e17bda3a773153 src/gui/FeatureSetMatcherPresenter.moc
+e4ea276964b065cfcc2fca7ed6a10d72 src/gui/MultiScaleCurvatureDetectorPresenter.moc
+f2add2c113fe478e3b2370deb1afd875 src/gui/MultiScaleDetectorPlotWidget.moc
+7d07da60ffb90a17cca984697f95ed82 src/gui/MultiScaleDetectorPresenter.moc
+0e1f00486f18660acbd032cb8f931e47 src/gui/MultiScaleNormalDetectorPresenter.moc
+369d640c2e199fcb7ede2ab9c3d3b3c4 src/gui/ParameterWidget.moc
+a863f05b51a8e23f1669fdb7b41c5be1 src/gui/RansacPresenter.moc
+59dd6782ca3f27dafb5b836ce6d83586 src/gui/RendererWidget.moc
+7d45ab1600b3738b4883e54a930900cc src/gui/SensorStreamWidget.moc
+3e3d17888b3e9574425945761df8630e src/gui/ShapeContextPresenter.moc
+061c73bba9b82d383146b98368fb0b9e src/gui/SimplePeakFinderPresenter.moc

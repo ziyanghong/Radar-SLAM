@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O2 -g -DNDEBUG  -shared -Wl,-soname,libsensors.so -o libsensors.so CMakeFiles/sensors.dir/AbstractReading.cpp.o CMakeFiles/sensors.dir/LaserReading.cpp.o ../geometry/libgeometry.so -lboost_serialization -Wl,-rpath,/home/hong/catkin_ws/src/radar_localization/Thirdparty/openslam_flirtlib/build/src/geometry: 

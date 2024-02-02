@@ -1,0 +1,115 @@
+%YAML:1.0
+
+#-------------------------------------
+# System parameters. Adjust them!
+#-------------------------------------
+
+cartImageWidth: 701
+cartImageHeight: 701
+ # Maximum distance at each azimuth scan in meters
+cartImageScale: 87.5
+startFrameTest: 0
+lastFrameTest: 8866
+ # Maximum frames stored in the local map window
+localFramesMaxSize: 1
+ # Loop closure option
+loopClosure: 0
+# Track mode: 0 (track keyframe), 1 (track last k frames with KLT tracker)
+trackMode: 1 
+# center Mask Range
+centerMaskRange: 3
+# # Initial Pose
+# init_pose: !!opencv-matrix
+#    rows: 3
+#    cols: 3
+#    dt: d
+#    data: [ -0.98480775, 0.17364818, 0,
+#            -0.17364818, -0.98480775, 0,
+#            0, 0, 1]
+# Initial Pose
+#init_pose: !!opencv-matrix
+#   rows: 3
+#   cols: 3
+#   dt: d
+#   data: [ 1, 0, 0,
+#           0, 1, 0,
+#           0, 0, 1]
+
+pause: 0
+loopRate: 0.2
+# 1: CFAR, 2: SURF 3: ORB
+descriptorOption: 2
+# Start from which Frame to perform matching
+ithFrame: 1
+
+# New frame criteria
+keyFrameDistance: 3.0
+keyFrameAngle: 0.05
+
+# Matching parameters
+# 0: Nearest Neighbour 1: FLANN 2: Brute force
+matcherOption: 0
+LowesRatio: 0.8
+# clique rigidity distance threshold
+cliqueDistThres: 2
+# KD tree radius
+treeRadius: 40
+
+
+# Path to read Radar Polar and Cartesian Image
+datasetPath: /home/hong/Documents/Oxford_Radar_RobotCar_Dataset/2019-01-10-11-46-21-radar-oxford-10k/
+polarRadarImageAssociateFile: /home/hong/Documents/Oxford_Radar_RobotCar_Dataset/2019-01-10-11-46-21-radar-oxford-10k/Navtech_Polar.txt
+radarImagePolarFolderPath: /home/hong/Documents/Oxford_Radar_RobotCar_Dataset/2019-01-10-11-46-21-radar-oxford-10k/radar_zfill_six/
+radarImageCartesianFolderPath: /home/hong/Documents/Oxford_Radar_RobotCar_Dataset/2019-01-10-11-46-21-radar-oxford-10k/701_radar_cart/
+
+# Path to GPS, IMU and Twist
+gpsAssociateFile: /home/hong/datasets/2019-01-10-11-46-21-radar-oxford-10k/GPS_IMU_Twist.txt
+gpsimuFolderPath: /home/hong/datasets/2019-01-10-11-46-21-radar-oxford-10k/GPS_IMU_Twist/
+
+# Path to groundtruth
+groundtruthFile: /home/hong/Documents/Oxford_Radar_RobotCar_Dataset/2019-01-10-11-46-21-radar-oxford-10k/groundtruth_converted.txt
+
+# Odometry result path
+odometryResultFile: /home/hong/Documents/Oxford_Radar_RobotCar_Dataset/2019-01-10-11-46-21-radar-oxford-10k/our_result_odometry.csv
+# Path to store optimization result
+g2oResult: /home/hong/Documents/g2o/radar_localization/
+
+# Path to store log 
+logPath: /home/hong/catkin_ws/src/radar_localization/logfile/
+
+# CFAR parameters
+viPointSize: 50
+numberOfTrainCell: 80
+numberOfGuardCell: 4
+probabilityOfFalseAlarm: 0.1
+
+# Oxford
+oxfordRadius: 20
+wedgeResolution: 20
+
+# SURF parameters
+minHessian: 900
+
+
+
+# Current Pose optimization
+optimizeStep: 20
+huberWidth: 1
+minMatchesBetweenFrames: 5
+landmarkMinObservation: 2
+landmarkInformation: 100
+poseInformationXY: 10000
+poseInformationYaw: 10000
+twoFramesOptimization: 1
+chiTwo: 100
+
+
+# Symmetric transfer error optimization
+convert2LocalFrame: 1
+# 1: ceres, 0 g2o:
+ceresORg2o: 0
+
+# For visualization
+pointCloudSize: 1
+# Node ID for ros
+nodeID: 0

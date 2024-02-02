@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hong/catkin_ws/src/radar_localization/Thirdparty/openslam_flirtlib/src/geometry/point.cpp
+point.h
+/home/hong/catkin_ws/src/radar_localization/Thirdparty/openslam_flirtlib/src/geometry/point.h
+
+/home/hong/catkin_ws/src/radar_localization/Thirdparty/openslam_flirtlib/src/geometry/point.h
+cmath
+-
+iostream
+-
+boost/serialization/base_object.hpp
+-
+boost/serialization/utility.hpp
+-
+boost/serialization/access.hpp
+-
+boost/serialization/nvp.hpp
+-
+

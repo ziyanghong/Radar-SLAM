@@ -1,0 +1,110 @@
+%YAML:1.0
+
+#-------------------------------------
+# System parameters. Adjust them!
+#-------------------------------------
+
+cartImageWidth: 1153
+cartImageHeight: 1153
+cartImageScale: 100.0 # Maximum distance at each azimuth scan in meters
+startFrameTest: 0
+lastFrameTest: 7404
+# Maximum frames stored in the local map window
+localFramesMaxSize: 1
+# Loop closure option: 0 (no loop), 1(loop closure) 
+loopClosure: 1 
+# Track mode: 0 (track keyframe), 1 (track last k frames with KLT tracker)
+trackMode: 1 
+# center Mask Range
+centerMaskRange: 3
+
+pause: 0
+loopRate: 0.2
+# 1: CFAR, 2: SURF 3: ORB
+descriptorOption: 2
+# Start from which Frame to perform matching
+ithFrame: 1
+
+# New frame criteria
+keyFrameDistance: 2.0 # meter
+keyFrameAngle: 0.2 # radiant
+
+# Matching parameters
+# 0: Nearest Neighbour 1: FLANN 2: Brute force
+matcherOption: 0 
+LowesRatio: 0.8
+# clique rigidity distance threshold (In pixel)
+cliqueDistThres: 3
+# KD tree radius
+treeRadius: 50 
+
+# ---------------------------------------------------------------------path-------------------------------------------------------------
+# Path to read Radar Polar and Cartesian Image
+datasetPath: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/
+polarRadarImageAssociateFile: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/Navtech_Polar.txt
+radarImagePolarFolderPath: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/radar_zfill_six/
+radarImageCartesianFolderPath: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/701_88_radar_cart/
+
+# Path to GPS, IMU and Twist
+gpsAssociateFile: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/GPS_IMU_Twist.txt
+gpsimuFolderPath: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/GPS_IMU_Twist/
+
+# Path to groundtruth
+groundtruthFile: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/groundtruth_converted.txt
+
+# Odometry result path
+odometryResultFile: /media/hong/DiskD/RADIATE_DATASET/snow2021/snow2021_campus/our_result_odometry.csv
+# Path to store optimization result
+g2oResult: /home/hong/Documents/g2o/radar_localization/
+
+# Path to store log 
+logPath: /home/hong/catkin_ws/src/radar_localization/logfile/
+
+# ---------------------------------------------------------------------features-----------------------------------------------------------
+# CFAR parameters
+viPointSize: 50
+numberOfTrainCell: 80
+numberOfGuardCell: 4
+probabilityOfFalseAlarm: 0.1
+
+# Oxford
+oxfordRadius: 20
+wedgeResolution: 20
+
+# SURF parameters
+minHessian: 700
+
+# Number of points
+maximumTrackPoints: 60
+minimumTrackPoints: 40
+maximumTrackFrames: 3
+# ---------------------------------------------------------------------optimizer----------------------------------------------------------
+# Current Pose optimization
+optimizeStep: 20
+huberWidth: 1
+minMatchesBetweenFrames: 5
+landmarkMinObservation: 2
+landmarkInformation: 10000
+poseInformationXY: 10000
+poseInformationYaw: 10000
+twoFramesOptimization: 1
+chiTwo: 100
+# Local Optimization iteration
+iterations: 20
+motionPriorFactorX: 10000
+motionPriorFactorY: 10000
+motionPriorFactorYaw: 10000
+# pose graph loop information factor
+loopFactor: 0.4
+
+
+# Symmetric transfer error optimization
+convert2LocalFrame: 1
+# 1: ceres, 0 g2o:
+ceresORg2o: 0 
+
+# For visualization
+pointCloudSize: 1
+# For batch experiment
+nodeID: 23
+
