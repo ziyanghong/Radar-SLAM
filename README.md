@@ -46,5 +46,5 @@ c. Then run the system by the following command:
 d. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
 # 6. Coordinate system
-![Screenshot](coordinate system.png)
+<img src="https://github.com/ziyanghong/Radar-SLAM/coordinate system.png" width = 55% height = 55%/>
 
