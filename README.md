@@ -6,11 +6,11 @@ Ubuntu 16.04
 
 # 2. Dependancies:
 Install the following dependancies
-ROS version: kinetic
-g2o version: https://github.com/RainerKuemmerle/g2o/tree/20170730_git
+## ROS version: kinetic
+## g2o version: https://github.com/RainerKuemmerle/g2o/tree/20170730_git
 Install g2o at /usr/local/include/g2o, you can change the installation path but you need to change the line at CMakeLists.txt: SET( G2O_ROOT /usr/local/include/g2o )
-Eigen 3.3.8
-OpenCV 3.3.1
+## Eigen 3.3.8
+## OpenCV 3.3.1
 
 # 3. How to build the sytem
 a. Clone the repository 
@@ -46,6 +46,6 @@ c. Then run the system by the following command:
 d. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
 # 6. Coordinate system
-<img src="images/coordinate.png" width = 55% height = 55%/>
+<img src="images/coordinate.png" width = 40% height = 40%/>
 
 
