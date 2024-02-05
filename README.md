@@ -1,15 +1,15 @@
 # RadarSLAM
 If you use Radar-SLAM in an academic work, please cite:
-@article{hong2022radarslam,
-  title={RadarSLAM: A robust simultaneous localization and mapping system for all weather conditions},
-  author={Hong, Ziyang and Petillot, Yvan and Wallace, Andrew and Wang, Sen},
-  journal={The International Journal of Robotics Research},
-  volume={41},
-  number={5},
-  pages={519--542},
-  year={2022},
-  publisher={SAGE Publications Sage UK: London, England}
-}
+  @article{hong2022radarslam,
+    title={RadarSLAM: A robust simultaneous localization and mapping system for all weather conditions},
+    author={Hong, Ziyang and Petillot, Yvan and Wallace, Andrew and Wang, Sen},
+    journal={The International Journal of Robotics Research},
+    volume={41},
+    number={5},
+    pages={519--542},
+    year={2022},
+    publisher={SAGE Publications Sage UK: London, England}
+  }
 # 1. System enviroment:
 Ubuntu 16.04
 
