@@ -37,7 +37,7 @@ a. Simply run the system by the following command:
 b. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
 
-######################### To run the SLAM system with your own polar radar scan ########################
+######################### To run the SLAM system pwith your own polar radar scan ########################
 Steps:
 a. Convert the raw polar scan to Cartesian images using the robotcar-dataset-sdk, check /robotcar-dataset-sdk/matlab/parseSensor.m for reference
 b. Addjust the yaml config file in /testConfig, e.g., 001.yaml. Most importantly the numbers of cartImageWidth, cartImageHeight and cartImageScale
@@ -46,6 +46,5 @@ c. Then run the system by the following command:
 d. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
 # 6. Coordinate system
-We 
-<img src="https://github.com/ziyanghong/Radar-SLAM/coordinate.png" width = 55% height = 55%/>
+![Coordiante system](https://github.com/ziyanghong/Radar-SLAM/images/coordinate.png)
 
