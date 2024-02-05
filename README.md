@@ -9,7 +9,7 @@ Install the following dependancies
 version: kinetic
 ## g2o 
 version: https://github.com/RainerKuemmerle/g2o/tree/20170730_git
-Install g2o at /usr/local/include/g2o, you can change the installation path but you need to change the line at CMakeLists.txt: SET( G2O_ROOT /usr/local/include/g2o )
+\Install g2o at /usr/local/include/g2o, you can change the installation path but you need to change the line at CMakeLists.txt: SET( G2O_ROOT /usr/local/include/g2o )
 ## Eigen
 version 3.3.8
 ## OpenCV
