@@ -13,18 +13,18 @@ Install g2o at /usr/local/include/g2o, you can change the installation path but 
 ## OpenCV 3.3.1
 
 # 3. How to build the sytem
-a. Clone the repository 
-b. Place it under the catkin workspace, e.g., catkin_ws/src
-c. Use build.sh to build the Thirdparty libraries
+1. Clone the repository 
+2. Place it under the catkin workspace, e.g., catkin_ws/src
+3. Use build.sh to build the Thirdparty libraries
 
-cd radar_slam
-chmod +x build.sh
-./build.sh
+   cd radar_slam
+   chmod +x build.sh
+   ./build.sh
 
-d. Compile the code under catkin_ws
-cd ~/catkin_ws/
-catkin_make 
-source devel/setup.bash
+4. Compile the code under catkin_ws
+   cd ~/catkin_ws/
+   catkin_make 
+   source devel/setup.bash
 
 
 # 4. Download the datasets at:
