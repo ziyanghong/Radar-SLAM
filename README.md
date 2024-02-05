@@ -35,7 +35,7 @@ Download the Navtech radar sequences described in our paper from [here](https://
 # 5. How to run
 To run the SLAM system with the sequences described in our paper:
 1. Addjust the yaml config file in /testConfigOxford, e.g., 001.yaml. Modify the sequence path according to where you store the data.
-2. Simply run the system by the following command:
+2. Under the project directory, simply run the system by the following command:
    rosrun radar_slam radar_slam testConfigOxford/001.yaml
 3. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
