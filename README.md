@@ -43,7 +43,7 @@ To run the SLAM system with the sequences described in our paper:
 2. Under the project directory, simply run the system by the following command:
    rosrun radar_slam radar_slam testConfigOxford/001.yaml
 3. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
-
+<img src="images/snow_demo.gif" width = 100% height = 100%/>
 
 To run the SLAM system pwith your own polar radar scan:
 1. Convert the raw polar scan to Cartesian images using the (modified) robotcar-dataset-sdk, download from [here](https://drive.google.com/file/d/1cMuuY_69dQQMX359yOCkGJ-FWXK_VBwC/view?usp=drive_link), check /robotcar-dataset-sdk/matlab/parseSensor.m for reference
