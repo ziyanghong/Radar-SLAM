@@ -5,11 +5,15 @@ Ubuntu 16.04
 
 # 2. Dependancies:
 Install the following dependancies
-## ROS version: kinetic
-## g2o version: https://github.com/RainerKuemmerle/g2o/tree/20170730_git
+## ROS
+version: kinetic
+## g2o 
+version: https://github.com/RainerKuemmerle/g2o/tree/20170730_git
 Install g2o at /usr/local/include/g2o, you can change the installation path but you need to change the line at CMakeLists.txt: SET( G2O_ROOT /usr/local/include/g2o )
-## Eigen 3.3.8
-## OpenCV 3.3.1
+## Eigen
+version 3.3.8
+## OpenCV
+version 3.3.1
 
 # 3. How to build the sytem
 1. Clone the repository 
