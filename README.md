@@ -30,26 +30,25 @@ Install g2o at /usr/local/include/g2o, you can change the installation path but 
 
 
 # 4. Download the datasets at:
-https://drive.google.com/drive/folders/1Ebean2n64oBgZS4IxnG5CxxzG_u4FZ0R?usp=drive_link
+Download the Navtech radar sequences described in our paper from [here](https://drive.google.com/drive/folders/1Ebean2n64oBgZS4IxnG5CxxzG_u4FZ0R?usp=drive_link)
 
 # 5. How to run
 To run the SLAM system with the sequences described in our paper:
-1. Modify the dataset path according to where you store the data in testConfig/001.yaml
+1. Addjust the yaml config file in /testConfigOxford, e.g., 001.yaml. Modify the sequence path according to where you store the data.
 2. Simply run the system by the following command:
-   rosrun radar_localization radar_localization testConfig/001.yaml
+   rosrun radar_slam radar_slam testConfigOxford/001.yaml
 3. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
 
-To run the SLAM system pwith your own polar radar scan ########################
-Steps:
+To run the SLAM system pwith your own polar radar scan:
 1. Convert the raw polar scan to Cartesian images using the (modified) robotcar-dataset-sdk, download from [here](https://drive.google.com/file/d/1cMuuY_69dQQMX359yOCkGJ-FWXK_VBwC/view?usp=drive_link), check /robotcar-dataset-sdk/matlab/parseSensor.m for reference
 2. Addjust the yaml config file in /testConfig, e.g., 001.yaml. Most importantly the numbers of cartImageWidth, cartImageHeight and cartImageScale
 3. Then run the system by the following command:
-   rosrun  radar_localization radar_localization PathToYourYamlFile.yaml
+   rosrun  radar_slam radar_slam PathToYourYamlFile.yaml
 4. Run rivz and load the RadarSLAM.rviz in /rviz_config for visualization
 
 # 6. Coordinate system
-<img src="images/coordinate.png" width = 40% height = 40%/>
+<img src="images/coordinate.png" width = 35% height = 35%/>
 
 # 7. Citation
 If you use Radar-SLAM in an academic work, please cite:
